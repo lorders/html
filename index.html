@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>太极八卦图</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		
+		body {
+			background-color: gray;
+		}
+		
+		@keyframes x {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+		
+		[id=太极] {
+			fuckborder: 1px solid red;
+			height: 400px;
+			width: 400px;
+			border-radius: 200px;
+			position: relative;
+			overflow: hidden;
+			animation: x 8s infinite ease-in-out alternate;
+			box-shadow: 0px 0px 8px 5px rgba(0, 0, 255, .2);
+			
+		}
+		
+		#太极 > div:first-child {
+			width: 50%;
+			height: 100%;
+			background-color: black;
+			position: absolute;
+			left: 0;
+		}
+		
+		#太极 > div:nth-child(2) {
+			width: 50%;
+			height: 100%;
+			background-color: white;
+			position: absolute;
+			right: 0;
+		}
+		
+		#太极 > div:nth-child(3) {
+			fuckborder: red solid 10px;
+			position: absolute;
+			height: 200px;
+			width: 200px;
+			background-color: black;
+			margin-left: -100px;
+			border-radius: 50%;
+			left: 50%
+		}
+		
+		#太极 > div:nth-child(4) {
+			fuckborder: red solid 10px;
+			position: absolute;
+			height: 200px;
+			width: 200px;
+			background-color: white;
+			margin-left: -100px;
+			border-radius: 50%;
+			left: 50%;
+			bottom: 0;
+		}
+		
+		#太极 > div:nth-child(5) {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			left: 50%;
+			background-color: white;
+			margin-left: -25px;
+			top: 75px;
+			border-radius: 25px;
+		}
+		
+		#太极 > div:nth-child(6) {
+			position: absolute;
+			height: 50px;
+			width: 50px;
+			left: 50%;
+			background-color: black;
+			margin-left: -25px;
+			bottom: 75px;
+			border-radius: 25px;
+		}
+		
+		@media (max-width: 500px) {
+			#太极 {
+				width: 200px;
+				height: 200px;
+			}
+			
+			#太极 > div:nth-child(3) {
+				fuckborder: red solid 10px;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				background-color: black;
+				margin-left: -50px;
+				border-radius: 50%;
+				left: 50%
+			}
+			
+			#太极 > div:nth-child(4) {
+				fuckborder: red solid 10px;
+				position: absolute;
+				height: 100px;
+				width: 100px;
+				background-color: white;
+				margin-left: -50px;
+				border-radius: 50%;
+				left: 50%;
+				bottom: 0;
+			}
+			
+			#太极 > div:nth-child(5) {
+				fuckborder: 1px solid red;
+				position: absolute;
+				height: 25px;
+				width: 25px;
+				left: 50%;
+				background-color: white;
+				margin-left: -12.5px;
+				top: 37.5px;
+				border-radius: 12.5px;
+			}
+			
+			#太极 > div:nth-child(6) {
+				fuckborder: 1px solid red;
+				height: 25px;
+				width: 25px;
+				left: 50%;
+				margin-left: -12.5px;
+				bottom: 37.5px;
+				border-radius: 12.5px;
+			}
+		}
+		
+		#太极-wrapper {
+			border: 1px red solid;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		#太极-描述 {
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+<div id="太极-wrapper">
+	<div id="太极">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div id="太极-描述">道可道非常道，名可名非常名</div>
+</div>
+
+</body>
+</html>
